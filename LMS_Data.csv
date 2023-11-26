@@ -1,0 +1,12 @@
+S.No.,Patient_ID,Patient_Name,Test_No.,Date,Lab_Test,Lab_Results,Normal,Units
+1,1104578,Anakin Blaze,001,27/11/2022,Haemolglobin,14.5,13.8 - 17.2,grams per decilitre
+2,1104578,Anakin Blaze,002,27/11/2022,Platelets,225000,135000 - 317000,cells per microlitre
+3,1104578,Anakin Blaze,003,27/11/2022,RBC,4850000,4320000 - 5720000,cells per microlitre
+4,1104578,Anakin Blaze,004,27/11/2022,WBC,6500,3400 - 9600,cells per microlitre
+5,1104592,Carl Smith,001,28/11/2022,Haemolglobin,11.5,11.6 - 15.0,grams per decilitre
+6,1104592,Carl Smith,002,28/11/2022,RBC,4250000,3900000 - 5030000,cells per microlitre
+7,1104592,Carl Smith,003,12/12/2022,WBC,5300,3400 - 9600,cells per microlitre
+8,1104592,Carl Smith,004,12/12/2022,Platelets,189000,157000 - 371000,cells per microlitre
+9,1104601,Jane Owens,001,12/12/2022,Haemolglobin,16.5,13.8 - 17.2,grams per decilitre
+10,1104601,Jane Owens,002,15/12/2022,RBC,5100000,4320000 - 5720000,cells per microlitre
+11,1104601,Jane Owens,003,15/12/2022,WBC,6340,3400 - 9600,cells per microlitre
