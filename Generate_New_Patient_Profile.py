@@ -2,6 +2,7 @@
 # GENERATE NEW PATIENT PROFILE
 
 from tkinter import *
+import csv
 
 win = Tk()
 win.title("Generate New Patient Profile | Accord Healthcare")
@@ -43,9 +44,12 @@ P_Num_inp.place(x=160,y=220)
 
 Gender = Label(win, text="Gender", font=("Times New Roman",12))
 Gender.place(x=5,y=250)
-var = IntVar()
-Radiobutton(win, text="Male", font=("Times New Roman",11), padx=5, variable=var, value=1).place(x=148,y=250)
-Radiobutton(win, text="Female", font=("Times New Roman",11), padx=5, variable=var, value=1).place(x=210,y=250)
+var=StringVar()
+var.set(None)
+rm = Radiobutton(win, text="Male", variable=var,value="Male")
+rm.place(x=148,y=250)
+rf = Radiobutton(win, text="Female", variable=var,value="Female")
+rf.place(x=210,y=250)
 
 P_Address = Label(win, text="Address", font=("Times New Roman",12))
 P_Address.place(x=5,y=280)
@@ -66,7 +70,18 @@ P_State = Label(win, text="State", font=("Times New Roman",12))
 P_State.place(x=5,y=340)
 drplist.place(x=154,y=335)
 
-bt = Button(win, text="Generate Profile", font=("Times New Roman",12))
+def Generate_Profile():
+    Label(win, text="Profile Generated").place(x=180,y=420)
+    if var.get()=="1": var.get()== "Male"
+    else: var.get()== "Female"
+    entered_data = {"Patient Name":P_Name_inp.get(),"Date of Birth":P_DOB_inp.get(),"Email ID":P_Email_inp.get(),"Mobile Number":P_Num_inp.get(),"Gender":var.get(),"Address":P_Address_inp.get(),"City":P_City_inp.get(),"State":cv.get()}
+    fields = ["Patient Name","Date of Birth","Email ID","Mobile Number","Gender","Address","City","State"]
+
+    with open("Patient_Details.csv",'a') as csvfile1:
+        csvwriter = csv.DictWriter(csvfile1,fieldnames = fields)
+        csvwriter.writerow(entered_data)
+        
+bt = Button(win, text="Generate Profile", font=("Times New Roman",12), command=Generate_Profile)
 bt.place(x=180,y=380)
 
 win.mainloop()
