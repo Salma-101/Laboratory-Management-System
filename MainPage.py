@@ -19,12 +19,14 @@ empty.pack()
 def Generate_New_Patient_Profile():
     import Generate_New_Patient_Profile
 
+def Patient_Info():
+    import Patient_Info
 
 b1 = Button(win, text="Generate New Patient Profile", fg="green", font=("Times New Roman",13), command = Generate_New_Patient_Profile)
 b1.pack()
 empty = Label(win, text=" ",font=1)
 empty.pack()
-b2 = Button(win, text="Enter Patient Info", fg="green", font=("Times New Roman",13))
+b2 = Button(win, text="Enter Patient Info", fg="green", font=("Times New Roman",13), command = Patient_Info)
 b2.pack()
 empty = Label(win, text="",font=1)
 empty.pack()
