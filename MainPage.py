@@ -5,7 +5,7 @@ from tkinter import *
 
 win = Tk()
 win.title("Accord Healthcare | Laboratory Management System")
-win.geometry('500x300')
+win.geometry('700x700')
 
 heading = Label(win, text="Accord Healthcare", font=("Times New Roman",35))
 heading.pack()
