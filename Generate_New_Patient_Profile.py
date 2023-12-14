@@ -6,7 +6,7 @@ import csv
 
 win = Tk()
 win.title("Generate New Patient Profile | Accord Healthcare")
-win.geometry('600x500')
+win.geometry('700x700')
 
 heading = Label(win, text="Accord Healthcare", font=("Times New Roman",30))
 heading.pack()
