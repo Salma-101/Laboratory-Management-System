@@ -1,6 +1,6 @@
 import tkinter
 win=tkinter.Tk()
-win.title("Patient's Past Medical History|Accord Healthcare")
+win.title("Patient's Past Medical History | Accord Healthcare")
 win.geometry('1450x600')
 
 heading=tkinter.Label(win,text="Accord Healthcare",font=("Times New Roman",30))
