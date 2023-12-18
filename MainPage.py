@@ -32,7 +32,7 @@ def TestResults():
     __import__('Patient Test Results.py')
 
 def Invoice():
-    import InvoiceByDhatri
+    import Patient_Invoice
 
 b1 = Button(win, text="Generate New Patient Profile", fg="green", font=("Times New Roman",13), command = Generate_New_Patient_Profile)
 b1.pack()
